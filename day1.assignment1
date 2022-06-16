@@ -8,7 +8,7 @@ public class FibonacciSeries
 	}
 	
 	public static void main(String[] args)	
-  {
+  	{
 		int range, firstNum, secNum , sum;
 		range = 8;
 		firstNum = 0;
@@ -18,14 +18,11 @@ public class FibonacciSeries
 		System.out.println(firstNum);
 		
 		for (int i = 1; i < range; i++)
-    {
+    		{
 			sum = addTwoNumbers(firstNum, secNum);
 			firstNum = secNum;
 			secNum = sum;
 			System.out.println(sum);
 		}
-		
 	}
-
-}
 }
