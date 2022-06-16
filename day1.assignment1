@@ -1,0 +1,31 @@
+package week1.day1.assignments;
+
+public class FibonacciSeries 
+{
+	public static int addTwoNumbers(int num1, int num2) 
+	{
+		return num1 + num2;
+	}
+	
+	public static void main(String[] args)	
+  {
+		int range, firstNum, secNum , sum;
+		range = 8;
+		firstNum = 0;
+		secNum = 1;
+		
+		System.out.println("First " + range + " numbers in fibonacci series are ");
+		System.out.println(firstNum);
+		
+		for (int i = 1; i < range; i++)
+    {
+			sum = addTwoNumbers(firstNum, secNum);
+			firstNum = secNum;
+			secNum = sum;
+			System.out.println(sum);
+		}
+		
+	}
+
+}
+}
